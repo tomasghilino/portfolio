@@ -23,3 +23,17 @@ export const MenuIconContainer = styledMUI(Fab)`
     }
     
 `;
+
+export const MenuDrop = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 11rem;
+  z-index: 10;
+`;
+
+export const MenuText = styled.p`
+  font-size: 1rem;
+`;
