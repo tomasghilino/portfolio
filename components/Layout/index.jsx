@@ -1,13 +1,13 @@
 import React from 'react';
 import { Global } from '@emotion/react';
 import { GlobalStyles } from './LayoutElements';
-import MenuButton from '../Ui/MenuButton';
+import Menu from '../Menu';
 
 const Layout = (props) => {
   return (
     <>
       <Global styles={GlobalStyles} />
-      <MenuButton />
+      <Menu />
       {props.children}
     </>
   );

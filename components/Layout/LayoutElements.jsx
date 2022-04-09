@@ -7,6 +7,8 @@ export const GlobalStyles = css`
     --primary: #146ca4;
     --dark: #242444;
     --semiDark: #46648c;
+    --pink: #9d32cf;
+    --darkPink: #53196e;
   }
   html {
     box-sizing: border-box;
