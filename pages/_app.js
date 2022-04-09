@@ -1,7 +1,10 @@
-import '../styles/globals.css'
-
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <title>Tomas Ghilino</title>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
