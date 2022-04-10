@@ -9,6 +9,7 @@ export const GlobalStyles = css`
     --semiDark: #46648c;
     --pink: #9d32cf;
     --darkPink: #53196e;
+    --gray: #515151;
   }
   html {
     box-sizing: border-box;

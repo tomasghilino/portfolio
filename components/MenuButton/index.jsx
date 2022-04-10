@@ -36,7 +36,7 @@ const MenuButton = () => {
           >
             <Fab color="default" variant="extended" aria-label="person">
               <PersonIcon fontSize="large" sx={{ mr: 1 }} />
-              <MenuText>¿Quién soy?</MenuText>
+              <MenuText>About Me</MenuText>
             </Fab>
             <Fab
               href="https://github.com/tomasghilino"
@@ -46,7 +46,7 @@ const MenuButton = () => {
               aria-label="github"
             >
               <GitHubIcon fontSize="large" sx={{ mr: 1 }} />
-              <MenuText>Mi GitHub</MenuText>
+              <MenuText>My GitHub</MenuText>
             </Fab>
             <Fab
               href="https://wa.me/5491153297562"
@@ -61,6 +61,7 @@ const MenuButton = () => {
           </MenuDrop>
         )}
       </AnimatePresence>
+
       <MenuContainer onClick={() => handleClick()}>
         <MenuIconContainer aria-label="menu" color="info">
           {open ? <ExpandMoreIcon /> : <ExpandLessIcon />}
