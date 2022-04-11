@@ -28,9 +28,9 @@ export const HeroTitle = styled.h1`
   display: inline-block;
   text-align: center;
 
-  border-bottom: 0.1rem solid #ececec;
+  border-bottom: 0.1rem solid var(--pink);
   padding-bottom: 10px;
-  color: var(--bright);
+  color: var(--darkPink);
 
   @media (max-width: 381px) {
     font-size: 4rem;
@@ -41,7 +41,7 @@ export const HeroText = styled.p`
   font-size: 2.2rem;
   text-align: center;
   font-weight: 200;
-  color: white;
+  color: var(--pink);
   margin-top: 2rem;
 `;
 

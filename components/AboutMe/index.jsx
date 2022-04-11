@@ -23,12 +23,16 @@ const AboutMe = () => {
           </div>
           <AboutMeTextContainer>
             <AboutMeText>
-              Hi, i'm Tomás Ghilino. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ipsa, minima in?
+              Hola, soy <span>Tomás Ghilino</span>. Me gusta la tecnología, los
+              desafíos y aprender cosas nuevas todo el tiempo.
             </AboutMeText>
             <AboutMeText>
-              Commodi quasi ratione similique consequatur consectetur aut, ea
-              quam delectus.
+              Curso Lic. Sistemas en la UNGS, y me estoy especializando en
+              Desarrollo Web de forma autodidacta.
+            </AboutMeText>
+            <AboutMeText>
+              Este es mi portfolio, diseñado y programado
+              <span> 100% por mi</span>.
             </AboutMeText>
           </AboutMeTextContainer>
         </AboutMeItemsContainer>

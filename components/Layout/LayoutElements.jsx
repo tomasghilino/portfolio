@@ -10,6 +10,7 @@ export const GlobalStyles = css`
     --pink: #9d32cf;
     --darkPink: #53196e;
     --gray: #515151;
+    --violet: #2f0da1;
   }
   html {
     box-sizing: border-box;
@@ -21,7 +22,7 @@ export const GlobalStyles = css`
     box-sizing: inherit;
   }
   body {
-    background-color: var(--dark);
+    background-color: var(--bright);
     margin: 0;
     padding: 0;
     h1,
