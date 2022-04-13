@@ -8,6 +8,7 @@ import {
   HeroDescription,
   HeroTitle,
   HeroText,
+  HeroCTA,
 } from './HeroElements';
 
 import { motion } from 'framer-motion';
@@ -33,6 +34,7 @@ const Hero = () => {
             >
               Web Developer
             </HeroText>
+            <HeroCTA>Download CV</HeroCTA>
           </HeroDescription>
           <Image src="/images/coding.svg" height={500} width={500} />
         </HeroPresentation>

@@ -2,7 +2,6 @@ import React from 'react';
 
 import {
   AboutMeContainer,
-  AboutMeTitle,
   AboutMeTextContainer,
   AboutMeText,
   AboutMeItems,
@@ -15,7 +14,6 @@ import ProfilePic from '../../public/images/yo.jpg';
 const AboutMe = () => {
   return (
     <AboutMeContainer>
-      <AboutMeTitle>About Me</AboutMeTitle>
       <AboutMeItems>
         <AboutMeItemsContainer>
           <div>

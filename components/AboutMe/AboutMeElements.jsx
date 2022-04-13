@@ -10,27 +10,6 @@ export const AboutMeContainer = styled.div`
   align-items: center;
 `;
 
-export const AboutMeTitle = styled.h1`
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 400;
-  color: white;
-  margin: 2rem 0 2rem 0;
-
-  box-shadow: -6px 12px 14px -7px rgba(190, 7, 204, 0.43);
-  -webkit-box-shadow: -6px 12px 14px -7px rgba(190, 7, 204, 0.43);
-  -moz-box-shadow: -6px 12px 14px -7px rgba(190, 7, 204, 0.43);
-
-  padding: 2rem;
-  display: inline-block;
-
-  border: 2px solid var(--pink);
-
-  @media (min-width: 768px) {
-    font-size: 4rem;
-  }
-`;
-
 export const AboutMeItems = styled.div`
   padding: 2rem;
   transform: scale(0.9);
