@@ -74,7 +74,6 @@ const MenuButton = () => {
         <MenuIconContainer aria-label="menu" color="info">
           {open ? <ExpandMoreIcon /> : <HelpIcon />}
         </MenuIconContainer>
-        x
       </MenuContainer>
     </>
   );
