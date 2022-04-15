@@ -3,12 +3,18 @@ import ProjectCard from '../ProjectCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper';
 import { css } from '@emotion/react';
+import useProjects from '../../../hooks/useProjects';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cube';
 
 const CarouselPC = () => {
+  const { loading, data } = useProjects();
+  if (loading) return;
+
+  const Projects = data.allProyectos;
+
   return (
     <Swiper
       effect={'coverflow'}
@@ -29,39 +35,17 @@ const CarouselPC = () => {
         max-width: 1050px;
       `}
     >
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
+      {Projects.map((Project) => (
+        <SwiperSlide key={Project.id}>
+          <ProjectCard
+            imageSrc={Project.imagen.responsiveImage.webpSrcSet}
+            title={Project.titulo}
+            codeLink={Project.linkgithub}
+            demoLink={Project.linkdemo}
+            description={Project.descripcion}
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

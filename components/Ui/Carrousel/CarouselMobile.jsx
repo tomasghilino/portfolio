@@ -6,7 +6,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cube';
 import ProjectCard from '../ProjectCard';
+import useProjects from '../../../hooks/useProjects';
 const CarouselMobile = () => {
+  const { loading, data } = useProjects();
+  if (loading) return;
+
+  const Projects = data.allProyectos;
   return (
     <Swiper
       effect={'cube'}
@@ -24,36 +29,17 @@ const CarouselMobile = () => {
       pagination={true}
       modules={[Autoplay, EffectCube, Pagination]}
     >
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ProjectCard />
-      </SwiperSlide>
+      {Projects.map((Project) => (
+        <SwiperSlide key={Project.id}>
+          <ProjectCard
+            imageSrc={Project.imagen.responsiveImage.webpSrcSet}
+            title={Project.titulo}
+            codeLink={Project.linkgithub}
+            demoLink={Project.linkdemo}
+            description={Project.descripcion}
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

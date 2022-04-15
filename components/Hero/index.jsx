@@ -22,19 +22,26 @@ const Hero = () => {
               as={motion.h1}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.3 }}
+              transition={{ duration: 1.2 }}
             >
               Tomás Ghilino
             </HeroTitle>
             <HeroText
               as={motion.p}
-              initial={{ opacity: 0, x: -20 }}
+              initial={{ opacity: 0, x: -10 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1.2, delay: 1.1 }}
+              transition={{ duration: 1, delay: 0.8 }}
             >
               Web Developer
             </HeroText>
-            <HeroCTA>Download CV</HeroCTA>
+            <HeroCTA
+              as={motion.p}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, delay: 1.6 }}
+            >
+              Download CV
+            </HeroCTA>
           </HeroDescription>
           <Image src="/images/coding.svg" height={500} width={500} />
         </HeroPresentation>
