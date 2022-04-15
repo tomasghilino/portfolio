@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import Fab from '@mui/material/Fab';
 
 //icons
-import PersonIcon from '@mui/icons-material/Person';
+
 import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import HelpIcon from '@mui/icons-material/Help';
+
 import {
   MenuContainer,
   MenuIconContainer,
@@ -34,9 +36,15 @@ const MenuButton = () => {
             exit={{ opacity: 0, y: 300 }}
             onClick={() => handleClick()}
           >
-            <Fab color="default" variant="extended" aria-label="person">
-              <PersonIcon fontSize="large" sx={{ mr: 1 }} />
-              <MenuText>About Me</MenuText>
+            <Fab
+              href="https://www.linkedin.com/in/tomasghilino/"
+              target="_blank"
+              color="default"
+              variant="extended"
+              aria-label="github"
+            >
+              <LinkedInIcon fontSize="large" sx={{ mr: 1 }} />
+              <MenuText>LinkedIn</MenuText>
             </Fab>
             <Fab
               href="https://github.com/tomasghilino"
@@ -46,7 +54,7 @@ const MenuButton = () => {
               aria-label="github"
             >
               <GitHubIcon fontSize="large" sx={{ mr: 1 }} />
-              <MenuText>My GitHub</MenuText>
+              <MenuText>GitHub</MenuText>
             </Fab>
             <Fab
               href="https://wa.me/5491153297562"
@@ -64,8 +72,9 @@ const MenuButton = () => {
 
       <MenuContainer onClick={() => handleClick()}>
         <MenuIconContainer aria-label="menu" color="info">
-          {open ? <ExpandMoreIcon /> : <ExpandLessIcon />}
+          {open ? <ExpandMoreIcon /> : <HelpIcon />}
         </MenuIconContainer>
+        x
       </MenuContainer>
     </>
   );

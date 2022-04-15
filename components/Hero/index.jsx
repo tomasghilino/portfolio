@@ -11,6 +11,8 @@ import {
   HeroCTA,
 } from './HeroElements';
 
+import Animation from '../Ui/Animation';
+
 import { motion } from 'framer-motion';
 const Hero = () => {
   return (
@@ -43,7 +45,9 @@ const Hero = () => {
               Download CV
             </HeroCTA>
           </HeroDescription>
-          <Image src="/images/coding.svg" height={500} width={500} />
+          <Animation direction="down" duration={1}>
+            <Image src="/images/coding.svg" height={500} width={500} />
+          </Animation>
         </HeroPresentation>
 
         <div>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { TechContainer, TechTitle, TechGrid } from './TechnologiesElements';
 import GridCard from '../Ui/GridCard';
+import Animation from '../Ui/Animation';
 
 import { css } from '@emotion/react';
 
@@ -20,38 +21,48 @@ const Technologies = () => {
         />
       </div>
       <TechContainer>
-        <TechTitle>Tecnologías</TechTitle>
+        <Animation direction="up" duration={1}>
+          <TechTitle>Tecnologías</TechTitle>
+        </Animation>
+        <Animation direction="up" duration={1} delay={0.5}>
+          <TechGrid>
+            <GridCard src="/images/react.png" title="React.js" />
+            <GridCard src="/images/next.png" title="Next.js" />
+            <GridCard src="/images/gatsby.png" title="Gatsby" />
+            <GridCard src="/images/graphql.png" title="GraphQL" />
+            <GridCard src="/images/nodeJs.png" title="Node.js" />
+            <GridCard src="/images/htmlcss.png" title="HTML / CSS" />
+            <GridCard
+              src="/images/styledcomponents.png"
+              title="Styled Components"
+            />
+            <GridCard src="/images/sasslogo.png" title="SASS" />
+            <GridCard src="/images/java.png" title="Java" />
+            <GridCard
+              src="/images/gitlogo.png"
+              title="Git / GitHub  / GitLab"
+            />
+          </TechGrid>
+        </Animation>
 
-        <TechGrid>
-          <GridCard src="/images/react.png" title="React.js" />
-          <GridCard src="/images/next.png" title="Next.js" />
-          <GridCard src="/images/gatsby.png" title="Gatsby" />
-          <GridCard src="/images/graphql.png" title="GraphQL" />
-          <GridCard src="/images/nodeJs.png" title="Node.js" />
-          <GridCard src="/images/htmlcss.png" title="HTML / CSS" />
-          <GridCard
-            src="/images/styledcomponents.png"
-            title="Styled Components"
-          />
-          <GridCard src="/images/sasslogo.png" title="SASS" />
-          <GridCard src="/images/java.png" title="Java" />
-          <GridCard src="/images/gitlogo.png" title="Git / GitHub  / GitLab" />
-        </TechGrid>
-
-        <TechTitle>También tengo conocimientos en</TechTitle>
-        <TechGrid
-          css={css`
-            @media (min-width: 768px) {
-              margin: 0 auto;
-              grid-template-columns: repeat(4, 1fr) !important;
-            }
-          `}
-        >
-          <GridCard src="/images/datocms.png" title="DatoCMS" />
-          <GridCard src="/images/firebase.png" title="Firebase" />
-          <GridCard src="/images/mongodb.png" title="MongoDB / Atlas" />
-          <GridCard src="/images/photoshop.png" title="Photoshop" />
-        </TechGrid>
+        <Animation direction="up" duration={1}>
+          <TechTitle>También tengo conocimientos en</TechTitle>
+        </Animation>
+        <Animation direction="up" duration={1} delay={0.5}>
+          <TechGrid
+            css={css`
+              @media (min-width: 768px) {
+                margin: 0 auto;
+                grid-template-columns: repeat(4, 1fr) !important;
+              }
+            `}
+          >
+            <GridCard src="/images/datocms.png" title="DatoCMS" />
+            <GridCard src="/images/firebase.png" title="Firebase" />
+            <GridCard src="/images/mongodb.png" title="MongoDB / Atlas" />
+            <GridCard src="/images/photoshop.png" title="Photoshop" />
+          </TechGrid>
+        </Animation>
       </TechContainer>
     </>
   );

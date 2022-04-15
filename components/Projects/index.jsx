@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Carrousel from '../Ui/Carrousel';
+import Animation from '../Ui/Animation';
 
 import {
   ProjectsContainer,
@@ -9,10 +10,14 @@ import {
 const Projects = () => {
   return (
     <ProjectsContainer>
-      <ProjectTitle>Mis Proyectos</ProjectTitle>
-      <ProjectSubtitle>
-        No están todos, recomiendo ver mi GitHub.
-      </ProjectSubtitle>
+      <Animation direction="up" duration={1}>
+        <ProjectTitle>Mis Proyectos</ProjectTitle>
+      </Animation>
+      <Animation direction="up" duration={1} delay={0.5}>
+        <ProjectSubtitle>
+          No están todos, recomiendo ver mi GitHub.
+        </ProjectSubtitle>
+      </Animation>
 
       <Carrousel />
     </ProjectsContainer>

@@ -64,10 +64,10 @@ export const SocialMedia = styled.div`
 
   a {
     text-decoration: none;
-
-    &:visited {
-      color: white;
-    }
+    color: white;
+  }
+  a:visited {
+    color: white;
   }
 
   svg {

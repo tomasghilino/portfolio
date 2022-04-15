@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-cube';
 import ProjectCard from '../ProjectCard';
 import useProjects from '../../../hooks/useProjects';
+
 const CarouselMobile = () => {
   const { loading, data } = useProjects();
   if (loading) return;
