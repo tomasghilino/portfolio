@@ -42,7 +42,7 @@ export const AboutMeText = styled.p`
   margin-bottom: 2rem;
 
   span {
-    color: var(--bright);
+    color: var(--yellow);
   }
 
   @media (min-width: 768px) {

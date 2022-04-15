@@ -52,7 +52,7 @@ export const HeroCTA = styled.a`
   text-align: center;
   font-weight: 300;
   font-size: 2rem;
-  color: var(--bright);
+  color: var(--yellow);
   border-radius: 2rem;
   width: 90%;
 

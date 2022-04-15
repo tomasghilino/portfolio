@@ -14,9 +14,7 @@ const Projects = () => {
         <ProjectTitle>Mis Proyectos</ProjectTitle>
       </Animation>
       <Animation direction="up" duration={1} delay={0.5}>
-        <ProjectSubtitle>
-          No están todos, recomiendo ver mi GitHub.
-        </ProjectSubtitle>
+        <ProjectSubtitle>Algunos de ellos, más en mi GitHub.</ProjectSubtitle>
       </Animation>
 
       <Carrousel />

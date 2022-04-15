@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const FooterContainer = styled.div`
-  height: 350px;
+  height: 320px;
   background-color: var(--dark);
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ export const FooterLogo = styled.h1`
 `;
 
 export const FooterSubtitle = styled.p`
-  color: #cbe025;
+  color: var(--yellow);
   font-size: 1.5rem;
 `;
 
@@ -42,7 +42,6 @@ export const FooterItemWrapper = styled.div`
   align-items: center;
 
   margin-bottom: 2rem;
-  margin-top: 2rem;
 
   svg {
     color: white;

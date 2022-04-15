@@ -46,7 +46,7 @@ const Technologies = () => {
         </Animation>
 
         <Animation direction="up" duration={1}>
-          <TechTitle>También tengo conocimientos en</TechTitle>
+          <TechTitle>También utilizo</TechTitle>
         </Animation>
         <Animation direction="up" duration={1} delay={0.5}>
           <TechGrid

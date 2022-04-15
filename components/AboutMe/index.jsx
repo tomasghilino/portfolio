@@ -31,11 +31,11 @@ const AboutMe = () => {
                 los desafíos y aprender cosas nuevas todo el tiempo.
               </AboutMeText>
               <AboutMeText>
-                Curso Lic. Sistemas en la UNGS, y me estoy especializando en
-                Desarrollo Web de forma autodidacta.
+                Curso Lic. Sistemas en la UNGS, nivel alto de inglés y me estoy
+                especializando en Desarrollo Web de forma autodidacta.
               </AboutMeText>
               <AboutMeText>
-                Este es mi portfolio, diseñado y programado
+                Portfolio diseñado y programado
                 <span> 100% por mi</span>.
               </AboutMeText>
             </Animation>

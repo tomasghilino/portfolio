@@ -11,6 +11,7 @@ export const GlobalStyles = css`
     --darkPink: #53196e;
     --gray: #515151;
     --violet: #2f0da1;
+    --yellow: #cbe025;
   }
   html {
     box-sizing: border-box;

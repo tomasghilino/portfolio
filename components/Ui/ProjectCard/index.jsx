@@ -27,7 +27,7 @@ export default function ProjectCard({
       <CardActions sx={{ justifyContent: 'space-around' }}>
         <Button
           sx={{
-            color: `#c2ed03`,
+            color: 'var(--yellow)',
             fontFamily: 'Roboto',
             fontSize: '1.3rem',
             marginRight: '1rem',
@@ -40,7 +40,11 @@ export default function ProjectCard({
           Demo
         </Button>
         <Button
-          sx={{ color: '#c2ed03', fontFamily: 'Roboto', fontSize: '1.3rem' }}
+          sx={{
+            color: 'var(--yellow)',
+            fontFamily: 'Roboto',
+            fontSize: '1.3rem',
+          }}
           size="small"
           href={codeLink}
           target="_blank"
@@ -58,7 +62,11 @@ export default function ProjectCard({
       />
       <CardContent sx={{ marginBottom: '2rem' }}>
         <Typography
-          sx={{ color: '#c2ed03', fontFamily: 'Roboto', fontSize: '2rem' }}
+          sx={{
+            color: 'var(--yellow)',
+            fontFamily: 'Roboto',
+            fontSize: '2rem',
+          }}
           gutterBottom
           variant="h5"
           component="div"
