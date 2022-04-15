@@ -18,6 +18,7 @@ const CarouselPC = () => {
   return (
     <Swiper
       effect={'coverflow'}
+      initialSlide={1}
       grabCursor={true}
       centeredSlides={true}
       slidesPerView={3}

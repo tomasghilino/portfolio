@@ -8,13 +8,17 @@ import { css } from '@emotion/react';
 const Technologies = () => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#242444"
-          fillOpacity="1"
-          d="M0,64L48,90.7C96,117,192,171,288,186.7C384,203,480,181,576,165.3C672,149,768,139,864,165.3C960,192,1056,256,1152,256C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-        ></path>
-      </svg>
+      <div>
+        <img
+          src="/images/separatorTech.png"
+          alt="footer"
+          css={css`
+            width: 100%;
+            z-index: -1;
+            display: block;
+          `}
+        />
+      </div>
       <TechContainer>
         <TechTitle>Tecnologías</TechTitle>
 

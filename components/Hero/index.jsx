@@ -46,22 +46,19 @@ const Hero = () => {
           <Image src="/images/coding.svg" height={500} width={500} />
         </HeroPresentation>
 
-        <svg
-          css={css`
-            position: absolute;
-            bottom: 0;
-            height: auto;
-            width: 100%;
-          `}
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="var(--dark)"
-            fillOpacity="1"
-            d="M0,192L60,202.7C120,213,240,235,360,208C480,181,600,107,720,106.7C840,107,960,181,1080,186.7C1200,192,1320,128,1380,96L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-          ></path>
-        </svg>
+        <div>
+          <img
+            src="/images/footerSvg.png"
+            alt="footer"
+            css={css`
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              z-index: -1;
+              display: block;
+            `}
+          />
+        </div>
       </HeroContainer>
     </>
   );

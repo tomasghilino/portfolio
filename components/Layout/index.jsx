@@ -2,6 +2,7 @@ import React from 'react';
 import { Global } from '@emotion/react';
 import { GlobalStyles } from './LayoutElements';
 import MenuButton from '../MenuButton';
+import Footer from './Footer';
 
 const Layout = (props) => {
   return (
@@ -9,6 +10,7 @@ const Layout = (props) => {
       <Global styles={GlobalStyles} />
       <MenuButton />
       {props.children}
+      <Footer />
     </>
   );
 };

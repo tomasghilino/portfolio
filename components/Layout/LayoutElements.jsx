@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 
 export const GlobalStyles = css`
   :root {
-    --bright: #52b7e9;
+    --bright: #349bcf;
     --semiBright: #189de4;
     --primary: #146ca4;
     --dark: #242444;
