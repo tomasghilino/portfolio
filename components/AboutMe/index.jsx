@@ -31,8 +31,8 @@ const AboutMe = () => {
                 los desafíos y aprender cosas nuevas todo el tiempo.
               </AboutMeText>
               <AboutMeText>
-                Curso Lic. Sistemas en la UNGS, nivel alto de inglés y me estoy
-                especializando en Desarrollo Web de forma autodidacta.
+                Curso Lic. Sistemas en la UNGS y me estoy especializando en
+                Desarrollo Web de forma autodidacta. Nivel avanzado de Inglés.
               </AboutMeText>
               <AboutMeText>
                 Portfolio diseñado y programado

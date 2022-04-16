@@ -34,4 +34,26 @@ export const GlobalStyles = css`
       font-family: 'Roboto', sans-serif;
     }
   }
+
+  // SCROLLBAR STYLES
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+
+    transition: all 0.2s ease-in-out;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #031e2a;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--darkPink);
+    height: 100px;
+    border-radius: 1rem;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--pink);
+  }
 `;
