@@ -56,8 +56,4 @@ export const GlobalStyles = css`
   ::-webkit-scrollbar-thumb:hover {
     background: var(--pink);
   }
-  img {
-    height: auto;
-    width: 100%;
-  }
 `;

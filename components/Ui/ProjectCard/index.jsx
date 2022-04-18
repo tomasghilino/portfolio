@@ -19,9 +19,9 @@ export default function ProjectCard({
     <Card
       sx={{
         maxWidth: 345,
+        maxHeight: 345,
         backgroundColor: 'var(--dark)',
         marginInline: 'auto',
-        borderRadius: '2rem',
       }}
     >
       <CardActions sx={{ justifyContent: 'space-around' }}>
@@ -55,7 +55,6 @@ export default function ProjectCard({
       </CardActions>
       <CardMedia
         loading="lazy"
-        sx={{}}
         component="img"
         height="180"
         image={imageSrc}

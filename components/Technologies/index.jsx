@@ -13,8 +13,6 @@ const Technologies = () => {
         <img
           src="/images/separatorTech.png"
           alt="footer"
-          width={500}
-          height={500}
           css={css`
             width: 100%;
             z-index: -1;
