@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# image export optimization
+/public/images/nextImageExportOptimizer
+
 # production
 /build
 

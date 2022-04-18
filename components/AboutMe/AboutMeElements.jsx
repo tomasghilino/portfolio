@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 export const AboutMeContainer = styled.div`
   background-color: var(--dark);
@@ -50,7 +50,7 @@ export const AboutMeText = styled.p`
   }
 `;
 
-export const Img = styled(Image)`
+export const Img = styled(ExportedImage)`
   border-radius: 50%;
   box-shadow: -6px 12px 14px -7px rgba(190, 7, 204, 0.43);
   -webkit-box-shadow: -6px 12px 14px -7px rgba(190, 7, 204, 0.43);

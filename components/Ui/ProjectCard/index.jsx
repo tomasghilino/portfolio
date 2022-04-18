@@ -54,6 +54,7 @@ export default function ProjectCard({
         </Button>
       </CardActions>
       <CardMedia
+        loading="lazy"
         sx={{}}
         component="img"
         height="180"

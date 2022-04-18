@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 import {
   HeroContainer,
@@ -48,13 +48,19 @@ const Hero = () => {
             </HeroCTA>
           </HeroDescription>
           <Animation direction="down" duration={1}>
-            <Image src="/images/coding.svg" height={500} width={500} />
+            <ExportedImage
+              src="/images/coding.svg"
+              alt="coding image"
+              height={500}
+              width={500}
+            />
           </Animation>
         </HeroPresentation>
 
         <div>
           <img
             src="/images/footerSvg.png"
+            layout="responsive"
             alt="footer"
             css={css`
               width: 100%;

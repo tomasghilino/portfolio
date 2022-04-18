@@ -65,15 +65,21 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/tomasghilino/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <LinkedInIcon />
               </a>
-              <a href="https://github.com/tomasghilino" target="_blank">
+              <a
+                href="https://github.com/tomasghilino"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <GitHubIcon />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCZWwXphj5qWChYAVoPHGcAg"
                 target="_blank"
+                rel="noreferrer"
               >
                 <YouTubeIcon />
               </a>

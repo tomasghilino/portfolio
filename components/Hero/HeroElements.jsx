@@ -43,8 +43,8 @@ export const HeroTitle = styled.h1`
 export const HeroText = styled.p`
   font-size: 2.2rem;
   text-align: center;
-  font-weight: 200;
-  color: var(--pink);
+  font-weight: 300;
+  color: var(--dark);
   margin-top: 2rem;
 `;
 

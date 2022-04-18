@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export && next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,6 +17,7 @@
     "graphql": "^16.3.0",
     "graphql-hooks": "^5.9.0",
     "next": "12.1.4",
+    "next-image-export-optimizer": "^0.9.5",
     "prop-types": "^15.8.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
