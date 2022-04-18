@@ -55,6 +55,7 @@ export const HeroCTA = styled.a`
   color: var(--yellow);
   border-radius: 2rem;
   width: 90%;
+  text-decoration: none;
 
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -70,6 +71,10 @@ export const HeroCTA = styled.a`
   border: 2px solid var(--pink);
 
   cursor: pointer;
+
+  &:visited {
+    color: var(--yellow);
+  }
 
   @media (min-width: 768px) {
     font-size: 2.4rem;

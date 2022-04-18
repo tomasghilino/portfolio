@@ -37,10 +37,12 @@ const Hero = () => {
               Web Developer
             </HeroText>
             <HeroCTA
-              as={motion.p}
+              as={motion.a}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 1.6 }}
+              href="/WebDeveloper.pdf"
+              download
             >
               Download CV
             </HeroCTA>
