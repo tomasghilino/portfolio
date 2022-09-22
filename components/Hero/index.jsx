@@ -1,6 +1,6 @@
-import React from 'react';
-import { css } from '@emotion/react';
-import ExportedImage from 'next-image-export-optimizer';
+import React from "react";
+import { css } from "@emotion/react";
+import ExportedImage from "next-image-export-optimizer";
 
 import {
   HeroContainer,
@@ -9,11 +9,11 @@ import {
   HeroTitle,
   HeroText,
   HeroCTA,
-} from './HeroElements';
+} from "./HeroElements";
 
-import Animation from '../Ui/Animation';
+import Animation from "../Ui/Animation";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <>
@@ -34,7 +34,7 @@ const Hero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.8 }}
             >
-              Web Developer
+              React.js / React Native Developer
             </HeroText>
             <HeroCTA
               as={motion.a}

@@ -1,8 +1,8 @@
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 export const GlobalStyles = css`
   :root {
-    --bright: #349bcf;
+    --bright: #f1f1f1dc;
     --semiBright: #189de4;
     --primary: #146ca4;
     --dark: #242444;
@@ -31,7 +31,7 @@ export const GlobalStyles = css`
     h3,
     p {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
     }
   }
 

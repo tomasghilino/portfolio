@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import {
   AboutMeContainer,
@@ -7,11 +7,11 @@ import {
   AboutMeItems,
   AboutMeItemsContainer,
   Img,
-} from './AboutMeElements';
+} from "./AboutMeElements";
 
-import Animation from '../Ui/Animation';
+import Animation from "../Ui/Animation";
 
-import ProfilePic from '../../public/images/yo.jpg';
+import ProfilePic from "../../public/images/yo.jpg";
 
 const AboutMe = () => {
   return (
@@ -31,12 +31,17 @@ const AboutMe = () => {
                 los desafíos y aprender cosas nuevas todo el tiempo.
               </AboutMeText>
               <AboutMeText>
-                Curso Lic. Sistemas en la UNGS y me estoy especializando en
-                Desarrollo Web de forma autodidacta. Nivel avanzado de Inglés.
+                Curso Lic. Sistemas en la UNGS y actualmente estoy trabajando en{" "}
+                <a href="https://exchangecopter.com">
+                  <span>Exchange Copter</span>
+                </a>{" "}
+                , un broker de criptomonedas. Nivel avanzado de Inglés (C1
+                Advanced).
               </AboutMeText>
               <AboutMeText>
                 Portfolio diseñado y programado
-                <span> 100% por mi</span>.
+                <span> 100% por mi </span>
+                (pronto voy a rediseñarlo con mis conocimientos actuales) .
               </AboutMeText>
             </Animation>
           </AboutMeTextContainer>

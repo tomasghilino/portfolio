@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { TechContainer, TechTitle, TechGrid } from './TechnologiesElements';
-import GridCard from '../Ui/GridCard';
-import Animation from '../Ui/Animation';
+import { TechContainer, TechTitle, TechGrid } from "./TechnologiesElements";
+import GridCard from "../Ui/GridCard";
+import Animation from "../Ui/Animation";
+import Experience from "../Experience";
 
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 const Technologies = () => {
   return (
@@ -20,18 +21,23 @@ const Technologies = () => {
           `}
         />
       </div>
+
       <TechContainer>
+        <Experience />
         <Animation direction="up" duration={1}>
           <TechTitle>Tecnologías</TechTitle>
         </Animation>
         <Animation direction="up" duration={1} delay={0.5}>
           <TechGrid>
-            <GridCard src="/images/react.png" title="React.js" />
+            <GridCard
+              src="/images/react.png"
+              title="React / React Native (Expo)"
+            />
             <GridCard src="/images/next.png" title="Next.js" />
             <GridCard src="/images/gatsby.png" title="Gatsby" />
             <GridCard src="/images/graphql.png" title="GraphQL" />
             <GridCard src="/images/nodeJs.png" title="Node.js" />
-            <GridCard src="/images/htmlcss.png" title="HTML / CSS" />
+            <GridCard src="/images/Docker.png" title="Docker / DigitalOcean" />
             <GridCard
               src="/images/styledcomponents.png"
               title="Styled Components"
